@@ -1,0 +1,150 @@
+@import "compass";
+
+
+@function usable-width ($width-entire, $margin-horizontal){
+ @return($width-entire - (2*$margin-horizontal));
+}
+
+
+
+$width-entire: 1080px;
+$height-entire: 1920px;
+
+$margin-horizontal: 245px;
+$margin-vertical: 150px;
+
+$button-width-and-height: 100px;
+
+$artwork-thumbnail: 100px;
+$music-information-height:150px;
+
+.entirescreen{
+width:$width-entire;
+height:$height-entire;
+border:solid 10px black;
+position:relative;
+font-family:georgia;
+
+}
+
+div.usablescreen{
+position:absolute;
+margin-bottom: $margin-vertical;
+margin-top: $margin-vertical;
+margin-right: $margin-horizontal;
+margin-left: $margin-horizontal;
+width: usable-width($width-entire, $margin-horizontal);
+height: 1600px;
+
+background-color:white;
+
+}
+
+div.albumart{
+height:usable-width($width-entire, $margin-horizontal);
+width:usable-width($width-entire, $margin-horizontal);
+background-image: url("http://www.placekitten.com/590/590");
+
+}
+
+div.music-information{
+text-align:center;
+height:$music-information-height;
+	
+}
+
+div.music-buttons{
+position:absolute;
+height:2 * $button-width-and-height;
+
+
+}
+
+.control{
+width:194px;
+height:100px;
+margin-top:5px;
+margin-bottom:5px;
+display:inline-block;
+}
+
+.controlshuffle{
+position:absolute;
+width:194px;
+height:100px;
+margin-top:5px;
+margin-bottom:5px;
+margin-left:198px;
+}
+
+.shuffleline{
+	
+	height:110px;
+	border-top: solid 1px black;
+	border-bottom: solid 1px black;
+}
+
+button{
+	width:$button-width-and-height;
+	height:$button-width-and-height;
+	margin-left:47px;
+	position:absolute;
+
+}
+
+.playlist{
+	position:absolute;
+	overflow-y:scroll;
+  overflow-x:hidden;
+	width:usable-width($width-entire, $margin-horizontal);
+	height:600px;
+	margin-top:250px;
+}
+
+.song{
+  background-color:white;
+  width: usable-width($width-entire, $margin-horizontal);
+  border-bottom:solid 1px black;
+  padding:10px;
+}
+
+.number{
+width:30px;
+height:100%;
+display:inline;
+position:relative;
+top:-50px;  
+
+
+
+}
+
+.thumbnail{
+  height:$artwork-thumbnail;
+  width:$artwork-thumbnail;
+  padding:5px;
+  display:inline;
+  position:relative;
+ 
+}
+
+img{
+  height:$artwork-thumbnail;
+  width:$artwork-thumbnail;
+  
+}
+
+.song-name-artist{
+display:inline;  
+height: $artwork-thumbnail;
+position:absolute;
+padding:5px;
+}
+
+.time{
+display:inline;
+float:right;
+margin-right:30px;
+height: $artwork-thumbnail;  
+position:relative; 
+}
