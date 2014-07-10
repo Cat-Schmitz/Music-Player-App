@@ -64,7 +64,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* For the containers holding the buttons, which properly space them */
-/* line 33, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .entirescreen {
   width: 1080px;
   height: 1920px;
@@ -73,22 +73,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-family: georgia;
 }
 
-/* line 42, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 h1 {
   font-size: 2em;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 h2 {
   font-size: 1.25em;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 51, ../sass/style.scss */
 h6 {
   font-size: 0.75em;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 div.usablescreen {
   position: absolute;
   margin-bottom: 150px;
@@ -101,32 +101,32 @@ div.usablescreen {
   overflow: hidden;
 }
 
-/* line 66, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 div.albumart {
   height: 590px;
   width: 590px;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 #art {
   width: 590px;
   height: 590px;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 div.music-information {
   text-align: center;
   height: 150px;
 }
 
 /*The following contains styling on all buttons including size, spacing, and position. */
-/* line 85, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 div.music-buttons {
   position: absolute;
   height: 120px;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 .control {
   width: 193.44262px;
   height: 100px;
@@ -135,7 +135,7 @@ div.music-buttons {
   display: inline-block;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 button.clickme {
   width: 100px;
   height: 100px;
@@ -144,7 +144,7 @@ button.clickme {
 }
 
 /* To properly align the shuffle button in the middle of the screen. Variable shuffle margins is equal to the usable width function */
-/* line 114, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .shuffle {
   width: 50px;
   height: 20px;
@@ -155,7 +155,7 @@ button.clickme {
   margin-right: 270px;
 }
 
-/* line 127, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 .shuffleline {
   height: 30px;
   border-top: solid 1px black;
@@ -163,7 +163,7 @@ button.clickme {
 }
 
 /*toggle styles for JS */
-/* line 137, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .shuffleclick {
   width: 50px;
   height: 20px;
@@ -176,7 +176,7 @@ button.clickme {
   opacity: 0.5;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 button.playclick {
   width: 100px;
   height: 100px;
@@ -187,7 +187,7 @@ button.playclick {
 }
 
 /*Song and playlist information */
-/* line 165, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 .playlist {
   position: absolute;
   overflow-y: auto;
@@ -197,7 +197,7 @@ button.playclick {
   margin-top: 250px;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 179, ../sass/style.scss */
 .song {
   background-color: white;
   width: 100%;
@@ -206,7 +206,7 @@ button.playclick {
   margin-bottom: 10px;
 }
 
-/* line 184, ../sass/style.scss */
+/* line 187, ../sass/style.scss */
 #number {
   width: 30px;
   height: 100%;
@@ -215,7 +215,7 @@ button.playclick {
   top: -50px;
 }
 
-/* line 195, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 #thumbnail {
   height: 100px;
   width: 100px;
@@ -223,14 +223,14 @@ button.playclick {
   position: relative;
 }
 
-/* line 203, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 #miniartwork {
   height: 100px;
   width: 100px;
   margin-bottom: 10px;
 }
 
-/* line 210, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .song-name-artist {
   display: inline;
   height: 100px;
@@ -238,7 +238,7 @@ button.playclick {
   padding: 5px;
 }
 
-/* line 217, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .time {
   display: inline;
   float: right;
