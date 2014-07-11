@@ -6,8 +6,6 @@
  @return($width-entire - (2*$margin-horizontal));
 };
 
-
-
 $width-entire: 1080px;
 $height-entire: 1920px;
 
@@ -30,24 +28,22 @@ $control-width: usable-width($width-entire, $margin-horizontal) / 3.05 ;
 $margin-left-button: ($control-width - $button-width-and-height) / 2.0 ;
 
 
-
-
-
 .entirescreen{
 	width:$width-entire;
 	height:$height-entire;
 	border:solid 10px black;
 	position:relative;
 	font-family:georgia;
-
 }
 
 h1{
 	font-size:2em;
 }
+
 h2{
 	font-size:1.25em;
 }
+
 h6{
 	font-size:0.75em;
 }
@@ -60,39 +56,34 @@ div.usablescreen{
 	margin-left: $margin-horizontal;
 	width: usable-width($width-entire, $margin-horizontal);
 	height: 1600px;
-
-	background-color:white;
 	overflow:hidden;
-
 }
 
-div.albumart{
+div.main-album-art{
 	height:usable-width($width-entire, $margin-horizontal);
 	width:usable-width($width-entire, $margin-horizontal);
 }
 
-#art{
+.main-album-art > img{
 	width:usable-width($width-entire, $margin-horizontal);
 	height:usable-width($width-entire, $margin-horizontal);
 }
 
-div.music-information{
+div.main-music-information{
 	text-align:center;
 	height:$music-information-height;
-	
+	margin-top:30px;
 }
 
 /*The following contains styling on all buttons including size, spacing, and position. */
 
-
-div.music-buttons{
+div.music-buttons-total{
 	position:absolute;
 	height: $button-width-and-height + $shuffle-height;
 }
 
-
-
-.control{
+/*div to hold the buttons for spacing reasons */ 
+.music-button-container{
 	width: $control-width;
 	height:$button-width-and-height;
 	margin-top:5px;
@@ -100,15 +91,29 @@ div.music-buttons{
 	display:inline-block;
 }
 
-
-
-button.clickme{
+@mixin button-style($button-width-and-height, $margin-left-button){
 	width:$button-width-and-height;
 	height:$button-width-and-height;
 	margin-left: $margin-left-button;
 	position:absolute;
 
+} 
+
+
+
+
+button.play{
+	@include button-style($button-width-and-height, $margin-left-button)
 }
+button.rewind{
+	@include button-style($button-width-and-height, $margin-left-button)
+}
+button.fastforward{
+	@include button-style($button-width-and-height, $margin-left-button)
+}
+
+
+/*START RENAMING CLASSES HERE */ 
 
 /* To properly align the shuffle button in the middle of the screen. Variable shuffle margins is equal to the usable width function */ 
 $usable-width: usable-width($width-entire, $margin-horizontal); 
@@ -124,15 +129,11 @@ $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 	margin-right:$margin-shuffle; 
 }
 
-
-
-
 .shuffleline{
 	
 	height:$shuffle-height + 10px;
 	border-top: solid 1px black;
 	border-bottom: solid 1px black;
-	
 }
 
 /*toggle styles for JS */ 
@@ -144,11 +145,9 @@ $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 	margin-top:5px;
 	margin-bottom:5px;
 	margin-left:$margin-shuffle;
-	margin-right:$margin-shuffle; 
-
+	margin-right:$margin-shuffle;
 	background-color:black;
 	opacity:0.5;
-
 }
 
 button.playclick{
@@ -158,10 +157,7 @@ button.playclick{
 	position:absolute;
 	opacity:0.5;
 	background-color:black;
-
 }
-
-
 
 /*Song and playlist information */ 
 
@@ -190,9 +186,6 @@ button.playclick{
 	display:inline;
 	position:relative;
 	top:-50px;  
-
-
-
 }
 
 #thumbnail{
@@ -200,7 +193,6 @@ button.playclick{
 	width:$artwork-thumbnail;
 	display:inline;
 	position:relative;
- 
 }
 
 #miniartwork{
@@ -224,3 +216,4 @@ button.playclick{
 	height: $artwork-thumbnail;  
 	position:relative; 
 }
+
