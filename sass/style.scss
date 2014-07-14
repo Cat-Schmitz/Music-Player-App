@@ -82,6 +82,24 @@ div.music-buttons-total{
 }
 
 /*div to hold the buttons for spacing reasons */ 
+
+
+%not-a-button {
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font: {
+        size: inherit;
+        family: inherit;
+    }
+
+    -webkit-font-smoothing: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
 .music-button-container{
 	width: $control-width;
 	height:$button-width-and-height;
@@ -95,7 +113,7 @@ div.music-buttons-total{
 	height:$button-width-and-height;
 	margin-left: $margin-left-button;
 	position:absolute;
-
+	@extend not-a-button 
 } 
 
 
@@ -103,6 +121,8 @@ div.music-buttons-total{
 
 button.play{
 	@include button-style($button-width-and-height, $margin-left-button)
+
+
 }
 button.rewind{
 	@include button-style($button-width-and-height, $margin-left-button)
@@ -149,6 +169,7 @@ $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 	opacity:0.5;
 }
 
+
 button.isPlaying{
 	width:$button-width-and-height;
 	height:$button-width-and-height;
@@ -157,6 +178,8 @@ button.isPlaying{
 	opacity:0.5;
 	background-color:black;
 }
+
+
 
 /*Song and playlist information */ 
 

@@ -127,7 +127,7 @@ div.music-buttons-total {
 }
 
 /*div to hold the buttons for spacing reasons */
-/* line 85, ../sass/style.scss */
+/* line 103, ../sass/style.scss */
 .music-button-container {
   width: 193.44262px;
   height: 100px;
@@ -136,7 +136,7 @@ div.music-buttons-total {
   display: inline-block;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 button.play {
   width: 100px;
   height: 100px;
@@ -144,7 +144,7 @@ button.play {
   position: absolute;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 button.rewind {
   width: 100px;
   height: 100px;
@@ -152,7 +152,7 @@ button.rewind {
   position: absolute;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
 button.fastforward {
   width: 100px;
   height: 100px;
@@ -162,7 +162,7 @@ button.fastforward {
 
 /*START RENAMING CLASSES HERE */
 /* To properly align the shuffle button in the middle of the screen. Variable shuffle margins is equal to the usable width function */
-/* line 121, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 .shuffle-container {
   width: 50px;
   height: 20px;
@@ -173,7 +173,7 @@ button.fastforward {
   margin-right: 270px;
 }
 
-/* line 131, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .shuffle-line-container {
   height: 30px;
   border-top: solid 1px black;
@@ -181,7 +181,7 @@ button.fastforward {
 }
 
 /*toggle styles for JS */
-/* line 140, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .isShuffleOn {
   width: 50px;
   height: 20px;
@@ -194,7 +194,7 @@ button.fastforward {
   opacity: 0.5;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 173, ../sass/style.scss */
 button.isPlaying {
   width: 100px;
   height: 100px;
@@ -205,7 +205,7 @@ button.isPlaying {
 }
 
 /*Song and playlist information */
-/* line 163, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .playlist {
   position: absolute;
   overflow-y: auto;
@@ -215,7 +215,7 @@ button.isPlaying {
   margin-top: 250px;
 }
 
-/* line 174, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .song {
   background-color: white;
   width: 100%;
@@ -224,7 +224,7 @@ button.isPlaying {
   margin-bottom: 10px;
 }
 
-/* line 182, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .song-number {
   width: 30px;
   height: 100%;
@@ -233,7 +233,7 @@ button.isPlaying {
   top: -50px;
 }
 
-/* line 190, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .song-thumbnail {
   height: 100px;
   width: 100px;
@@ -241,14 +241,14 @@ button.isPlaying {
   position: relative;
 }
 
-/* line 197, ../sass/style.scss */
+/* line 220, ../sass/style.scss */
 .song-thumbnail > img {
   height: 100px;
   width: 100px;
   margin-bottom: 10px;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 227, ../sass/style.scss */
 .song-name-artist-container {
   display: inline;
   height: 100px;
@@ -256,7 +256,7 @@ button.isPlaying {
   padding: 5px;
 }
 
-/* line 211, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
 .song-time {
   display: inline;
   float: right;
@@ -266,7 +266,7 @@ button.isPlaying {
 }
 
 /* iScroll Plugin Styling */
-/* line 222, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 #wrapper {
   position: relative;
   width: 590px;
@@ -288,7 +288,7 @@ button.isPlaying {
   text-size-adjust: none;
 }
 
-/* line 246, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 #scroller {
   position: absolute;
   /* Prevent elements to be highlighted on tap */
@@ -301,12 +301,12 @@ button.isPlaying {
   transform: translateZ(0);
 }
 
-/* line 260, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 li {
   list-style-type: none;
 }
 
-/* line 265, ../sass/style.scss */
+/* line 288, ../sass/style.scss */
 body {
   overflow: auto;
 }
