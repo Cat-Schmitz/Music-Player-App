@@ -1,7 +1,6 @@
 @import "compass";
 @import "compass/reset";
 
-
 @function usable-width ($width-entire, $margin-horizontal){
  @return($width-entire - (2*$margin-horizontal));
 };
@@ -119,7 +118,7 @@ button.fastforward{
 $usable-width: usable-width($width-entire, $margin-horizontal); 
 $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 
-.shuffle{
+.shuffle-container{
 	width:$shuffle-width;
 	height:$shuffle-height;
 	position:absolute;
@@ -129,7 +128,7 @@ $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 	margin-right:$margin-shuffle; 
 }
 
-.shuffleline{
+.shuffle-line-container{
 	
 	height:$shuffle-height + 10px;
 	border-top: solid 1px black;
@@ -138,7 +137,7 @@ $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 
 /*toggle styles for JS */ 
 
-.shuffleclick{
+.isShuffleOn{
 	width:$shuffle-width;
 	height:$shuffle-height;
 	position:absolute;
@@ -150,7 +149,7 @@ $margin-shuffle: ($usable-width - $shuffle-width) / 2.0 ;
 	opacity:0.5;
 }
 
-button.playclick{
+button.isPlaying{
 	width:$button-width-and-height;
 	height:$button-width-and-height;
 	margin-left: $margin-left-button;
@@ -180,7 +179,7 @@ button.playclick{
 	margin-bottom:10px;
 }
 
-#number{
+.song-number{
 	width:30px;
 	height:100%;
 	display:inline;
@@ -188,28 +187,28 @@ button.playclick{
 	top:-50px;  
 }
 
-#thumbnail{
+.song-thumbnail{
 	height:$artwork-thumbnail;
 	width:$artwork-thumbnail;
 	display:inline;
 	position:relative;
 }
 
-#miniartwork{
+.song-thumbnail > img{
 	height:$artwork-thumbnail;
 	width:$artwork-thumbnail;
 	margin-bottom:10px;  
 }
 
 
-.song-name-artist{
+.song-name-artist-container{
 	display:inline;  
 	height: $artwork-thumbnail;
 	position:absolute;
 	padding:5px;
 }
 
-.time{
+.song-time{
 	display:inline;
 	float:right;
 	margin-right:30px;
@@ -217,3 +216,52 @@ button.playclick{
 	position:relative; 
 }
 
+
+/* iScroll Plugin Styling */ 
+
+#wrapper {
+	position:relative;
+	width:590px;
+	height:600px;
+	overflow: hidden;
+
+	/* Prevent native touch events on Windows */
+	-ms-touch-action: none;
+
+	/* Prevent the callout on tap-hold and text selection */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	/* Prevent text resize on orientation change, useful for web-apps */
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+#scroller {
+	position: absolute;
+
+	/* Prevent elements to be highlighted on tap */
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+
+	/* Put the scroller into the HW Compositing layer right from the start */
+	-webkit-transform: translateZ(0);
+	-moz-transform: translateZ(0);
+	-ms-transform: translateZ(0);
+	-o-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+li{
+
+	list-style-type:none;
+
+}
+body{
+	overflow:auto;
+}
